@@ -9,17 +9,21 @@ using System.Windows.Forms;
 
 namespace SistVotoElectronico
 {
-    public partial class FrmVotante : Form
+    public partial class FrmJuezMesa : Form
     {
-        public FrmVotante()
+        public FrmJuezMesa()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
 
+        private void FrmJuezMesa_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
