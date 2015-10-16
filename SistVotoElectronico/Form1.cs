@@ -21,5 +21,17 @@ namespace SistVotoElectronico
 
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+            FrmControl frmContr = new FrmControl();
+            frmContr.ShowDialog();            
+        }
+
+        private void btnVotanteEmitirVoto_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Gracias por Emitir Su Voto.");
+
+        }
+
     }
 }

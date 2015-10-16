@@ -15,7 +15,7 @@ namespace SistVotoElectronico
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmJuezMesa());
+            Application.Run(new FrmInicio());
         }
     }
 }

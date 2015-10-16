@@ -132,7 +132,7 @@
     <value>194, 21</value>
   </data>
   <data name="rdbVotanteRosas.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>0</value>
   </data>
   <data name="rdbVotanteRosas.Text" xml:space="preserve">
     <value>Juan Manuel de Rosas</value>
@@ -147,7 +147,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;rdbVotanteRosas.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="rdbVotanteSarmiento.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -162,7 +162,7 @@
     <value>237, 21</value>
   </data>
   <data name="rdbVotanteSarmiento.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>1</value>
   </data>
   <data name="rdbVotanteSarmiento.Text" xml:space="preserve">
     <value>Domingo Faustino Sarmiento</value>
@@ -177,7 +177,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;rdbVotanteSarmiento.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="rdbVotanteUrquiza.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -192,7 +192,7 @@
     <value>231, 21</value>
   </data>
   <data name="rdbVotanteUrquiza.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>2</value>
   </data>
   <data name="rdbVotanteUrquiza.Text" xml:space="preserve">
     <value>Juan Justo Jose de Urquiza</value>
@@ -207,7 +207,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;rdbVotanteUrquiza.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="rdbVotanteBlanco.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -222,7 +222,7 @@
     <value>139, 21</value>
   </data>
   <data name="rdbVotanteBlanco.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>3</value>
   </data>
   <data name="rdbVotanteBlanco.Text" xml:space="preserve">
     <value>Voto en Blanco</value>
@@ -237,7 +237,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;rdbVotanteBlanco.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <data name="btnVotanteEmitirVoto.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="btnVotanteEmitirVoto.Location" type="System.Drawing.Point, System.Drawing">
     <value>327, 474</value>
@@ -246,7 +249,7 @@
     <value>408, 55</value>
   </data>
   <data name="btnVotanteEmitirVoto.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>4</value>
   </data>
   <data name="btnVotanteEmitirVoto.Text" xml:space="preserve">
     <value>Emitir Voto</value>
@@ -261,7 +264,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnVotanteEmitirVoto.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="pcbVotanteUrquiza.Location" type="System.Drawing.Point, System.Drawing">
     <value>567, 80</value>
@@ -282,7 +285,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pcbVotanteUrquiza.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="pcbVotanteEnBlanco.Location" type="System.Drawing.Point, System.Drawing">
     <value>807, 80</value>
@@ -303,7 +306,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pcbVotanteEnBlanco.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="pcbVotanteRosas.Location" type="System.Drawing.Point, System.Drawing">
     <value>87, 80</value>
@@ -324,7 +327,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pcbVotanteRosas.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="pcbVotanteSarmiento.Location" type="System.Drawing.Point, System.Drawing">
     <value>327, 80</value>
@@ -349,7 +352,34 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pcbVotanteSarmiento.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
+  </data>
+  <data name="lblVotanteSalir.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblVotanteSalir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 606</value>
+  </data>
+  <data name="lblVotanteSalir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 17</value>
+  </data>
+  <data name="lblVotanteSalir.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblVotanteSalir.Text" xml:space="preserve">
+    <value>Salir</value>
+  </data>
+  <data name="&gt;&gt;lblVotanteSalir.Name" xml:space="preserve">
+    <value>lblVotanteSalir</value>
+  </data>
+  <data name="&gt;&gt;lblVotanteSalir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblVotanteSalir.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblVotanteSalir.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -367,7 +397,7 @@
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Votante</value>
+    <value>Votante - Vot.Ar Sistema Electronico de Voto</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FrmVotante</value>

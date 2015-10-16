@@ -38,6 +38,7 @@
             this.pcbVotanteEnBlanco = new System.Windows.Forms.PictureBox();
             this.pcbVotanteRosas = new System.Windows.Forms.PictureBox();
             this.pcbVotanteSarmiento = new System.Windows.Forms.PictureBox();
+            this.lblVotanteSalir = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pcbVotanteUrquiza)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbVotanteEnBlanco)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbVotanteRosas)).BeginInit();
@@ -81,6 +82,7 @@
             resources.ApplyResources(this.btnVotanteEmitirVoto, "btnVotanteEmitirVoto");
             this.btnVotanteEmitirVoto.Name = "btnVotanteEmitirVoto";
             this.btnVotanteEmitirVoto.UseVisualStyleBackColor = true;
+            this.btnVotanteEmitirVoto.Click += new System.EventHandler(this.btnVotanteEmitirVoto_Click);
             // 
             // pcbVotanteUrquiza
             // 
@@ -110,11 +112,20 @@
             this.pcbVotanteSarmiento.Name = "pcbVotanteSarmiento";
             this.pcbVotanteSarmiento.TabStop = false;
             // 
+            // lblVotanteSalir
+            // 
+            resources.ApplyResources(this.lblVotanteSalir, "lblVotanteSalir");
+            this.lblVotanteSalir.BackColor = System.Drawing.Color.Transparent;
+            this.lblVotanteSalir.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.lblVotanteSalir.Name = "lblVotanteSalir";
+            this.lblVotanteSalir.Click += new System.EventHandler(this.label1_Click);
+            // 
             // FrmVotante
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SistVotoElectronico.Properties.Resources.fondo;
+            this.Controls.Add(this.lblVotanteSalir);
             this.Controls.Add(this.btnVotanteEmitirVoto);
             this.Controls.Add(this.rdbVotanteBlanco);
             this.Controls.Add(this.rdbVotanteUrquiza);
@@ -149,6 +160,7 @@
         private System.Windows.Forms.RadioButton rdbVotanteUrquiza;
         private System.Windows.Forms.RadioButton rdbVotanteBlanco;
         private System.Windows.Forms.Button btnVotanteEmitirVoto;
+        private System.Windows.Forms.Label lblVotanteSalir;
     }
 }
 
