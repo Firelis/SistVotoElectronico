@@ -67,5 +67,16 @@ namespace SistVotoElectronico
             lblJuezMensajeSist.Text = "Se activo la votacion, a la espera del Voto.";
         }
 
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+
+
+
+
+
+
+
+        }
+
    }
 }
