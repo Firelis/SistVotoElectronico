@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-
+using System.Data;
+using System.Data.OleDb;
 namespace SistVotoElectronico
 {
     static class Program
@@ -17,5 +18,13 @@ namespace SistVotoElectronico
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmInicio());
         }
+
+
+
+
+
+
+
+
     }
 }

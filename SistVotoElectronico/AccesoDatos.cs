@@ -5,10 +5,13 @@ using System.Text;
 using System.Data;
 using System.Data.OleDb;
 
-namespace SistVotoElectronico
-{
+namespace SistVotoElectronico {
+
     class AccesoDatos
     {
+
+
+
         public OleDbConnection conexion;
         public OleDbCommand comando;
         public OleDbDataReader lector;
@@ -38,6 +41,9 @@ namespace SistVotoElectronico
             conexion.Open();
             comando.Connection = conexion;
             comando.CommandType = CommandType.Text;
+//            conexion = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Integrador\\GIT\\SistVotoElectronico\\VotoElectronico.mdb");
+            conexion = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\\Tecnicatura Programacion\\GIT\\SistVotoElectronico\\VotoElectronico.mdb");
+
         }
 
         //metodo desconectar db
@@ -55,14 +61,18 @@ namespace SistVotoElectronico
         //}
 
         //metodo consultar tabla
+        
         public DataTable consultarTabla(string tabla)
+        
         {
             DataTable dt = new DataTable();
             conectar();
             comando.CommandText = "SELECT * FROM " + tabla;
             dt.Load(comando.ExecuteReader());
             desconectar();
+
             return dt;
+        
         }
 
 

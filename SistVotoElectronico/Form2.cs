@@ -6,11 +6,15 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-
+using System.Data.OleDb;
 namespace SistVotoElectronico
 {
     public partial class FrmJuezMesa : Form
     {
+        AccesoDatos Ac;
+
+
+
         public FrmJuezMesa()
         {
             InitializeComponent();
@@ -69,9 +73,8 @@ namespace SistVotoElectronico
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-
-
-
+   //         AccesoDatos Ac = new
+   //         new Ac = Ac.consultarTabla("Personas");
 
 
 
