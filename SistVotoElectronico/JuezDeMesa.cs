@@ -11,9 +11,8 @@ namespace SistVotoElectronico
 {
     public partial class FrmJuezMesa : Form
     {
-        AccesoDatos Ac;
-
-
+        AccesoDatos AD;
+        
 
         public FrmJuezMesa()
         {
@@ -73,11 +72,13 @@ namespace SistVotoElectronico
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-   //         AccesoDatos Ac = new
-   //         new Ac = Ac.consultarTabla("Personas");
+            AccesoDatos ac = new AccesoDatos();
+            ac.consultarTablaDNI("Personas");
+            //ac.CustomersRow customersRow = ac.Customers.FindByCustomerID(txtJuezDocumento.Text);
+        }
 
-
-
+        private void txtJuezDocumento_TextChanged(object sender, EventArgs e)
+        {
 
         }
 

@@ -9,9 +9,6 @@ namespace SistVotoElectronico {
 
     class AccesoDatos
     {
-
-
-
         public OleDbConnection conexion;
         public OleDbCommand comando;
         public OleDbDataReader lector;
@@ -28,6 +25,14 @@ namespace SistVotoElectronico {
             set { cadenaConexion = value; }
             get { return cadenaConexion; }
         }
+        
+        public AccesoDatos()
+        {
+            conexion = null;
+            comando = null;
+            lector = null;
+            cadenaConexion = "";
+        }
 
         public AccesoDatos(string cadenaConexion)
         {
@@ -41,9 +46,9 @@ namespace SistVotoElectronico {
             conexion.Open();
             comando.Connection = conexion;
             comando.CommandType = CommandType.Text;
-//            conexion = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Integrador\\GIT\\SistVotoElectronico\\VotoElectronico.mdb");
-            conexion = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\\Tecnicatura Programacion\\GIT\\SistVotoElectronico\\VotoElectronico.mdb");
-
+//          conexion = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Integrador\\GIT\\SistVotoElectronico\\VotoElectronico.mdb");
+            conexion = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\Ismas\\Documents\\Visual Studio 2010\\Projects\\SistVotoElectronico\\VotoElectronico.mdb");
+//          conexion = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\\Tecnicatura Programacion\\GIT\\SistVotoElectronico\\VotoElectronico.mdb");
         }
 
         //metodo desconectar db
@@ -70,14 +75,17 @@ namespace SistVotoElectronico {
             comando.CommandText = "SELECT * FROM " + tabla;
             dt.Load(comando.ExecuteReader());
             desconectar();
-
-            return dt;
-        
+            return dt;      
         }
-
-
-
+        public DataTable consultarTablaDNI(string tabla)
+        {
+            DataTable dt = new DataTable();
+            conectar();
+            comando.CommandText = "SELECT DNI FROM " + tabla;
+            dt.Load(comando.ExecuteReader());
+            desconectar();
+            return dt;
+        }
     }
-
 }
 
