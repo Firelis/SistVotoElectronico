@@ -46,7 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="AccesoDatos.cs" />
+=======
+    <Compile Include="Ejemplo.cs" />
+>>>>>>> refs/remotes/origin/master
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
