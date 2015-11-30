@@ -88,6 +88,7 @@
             this.Controls.Add(this.btnInicioVotante);
             this.Name = "FrmInicio";
             this.Text = "Inicio - Vot.Ar Sistema Electronico de Voto";
+            this.Load += new System.EventHandler(this.FrmInicio_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

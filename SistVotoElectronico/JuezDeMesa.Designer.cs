@@ -45,6 +45,7 @@
             this.txtJuezAltura = new System.Windows.Forms.TextBox();
             this.lblJuezAltura = new System.Windows.Forms.Label();
             this.grbJuezDatosPersona = new System.Windows.Forms.GroupBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.grbJuezPresentismo = new System.Windows.Forms.GroupBox();
             this.lblJuezVotoRecienteResult = new System.Windows.Forms.Label();
             this.lvlJuezInformacion1 = new System.Windows.Forms.Label();
@@ -67,7 +68,7 @@
             this.txtJuezNom.Name = "txtJuezNom";
             this.txtJuezNom.ReadOnly = true;
             this.txtJuezNom.Size = new System.Drawing.Size(788, 22);
-            this.txtJuezNom.TabIndex = 3;
+            this.txtJuezNom.TabIndex = 2;
             // 
             // txtJuezApe
             // 
@@ -85,15 +86,16 @@
             this.txtJuezTipDoc.Name = "txtJuezTipDoc";
             this.txtJuezTipDoc.ReadOnly = true;
             this.txtJuezTipDoc.Size = new System.Drawing.Size(111, 22);
-            this.txtJuezTipDoc.TabIndex = 7;
+            this.txtJuezTipDoc.TabIndex = 1;
             this.txtJuezTipDoc.TextChanged += new System.EventHandler(this.txtJuezTipDoc_TextChanged);
             // 
             // txtJuezDocumento
             // 
             this.txtJuezDocumento.Location = new System.Drawing.Point(157, 33);
             this.txtJuezDocumento.Name = "txtJuezDocumento";
-            this.txtJuezDocumento.Size = new System.Drawing.Size(522, 22);
-            this.txtJuezDocumento.TabIndex = 9;
+            this.txtJuezDocumento.Size = new System.Drawing.Size(412, 22);
+            this.txtJuezDocumento.TabIndex = 0;
+            this.txtJuezDocumento.TextChanged += new System.EventHandler(this.txtJuezDocumento_TextChanged);
             this.txtJuezDocumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtJuezDocumento_KeyPress);
             // 
             // txtJuezCalle
@@ -147,7 +149,7 @@
             // 
             this.lblJuezTipDoc.AutoSize = true;
             this.lblJuezTipDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJuezTipDoc.Location = new System.Drawing.Point(685, 33);
+            this.lblJuezTipDoc.Location = new System.Drawing.Point(685, 36);
             this.lblJuezTipDoc.Name = "lblJuezTipDoc";
             this.lblJuezTipDoc.Size = new System.Drawing.Size(149, 17);
             this.lblJuezTipDoc.TabIndex = 6;
@@ -215,6 +217,7 @@
             // grbJuezDatosPersona
             // 
             this.grbJuezDatosPersona.BackColor = System.Drawing.Color.Transparent;
+            this.grbJuezDatosPersona.Controls.Add(this.btnBuscar);
             this.grbJuezDatosPersona.Controls.Add(this.lblJuezAltura);
             this.grbJuezDatosPersona.Controls.Add(this.txtJuezAltura);
             this.grbJuezDatosPersona.Controls.Add(this.lblJuezDepartamento);
@@ -237,6 +240,16 @@
             this.grbJuezDatosPersona.TabIndex = 0;
             this.grbJuezDatosPersona.TabStop = false;
             this.grbJuezDatosPersona.Text = "Datos De La Persona";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(575, 33);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(104, 22);
+            this.btnBuscar.TabIndex = 5;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // grbJuezPresentismo
             // 
@@ -281,7 +294,7 @@
             this.cbmJuezIdAsistencia.Location = new System.Drawing.Point(728, 40);
             this.cbmJuezIdAsistencia.Name = "cbmJuezIdAsistencia";
             this.cbmJuezIdAsistencia.Size = new System.Drawing.Size(216, 24);
-            this.cbmJuezIdAsistencia.TabIndex = 1;
+            this.cbmJuezIdAsistencia.TabIndex = 0;
             // 
             // lblJuezInformacion2
             // 
@@ -299,7 +312,7 @@
             this.btnJuezConfirmarVoto.Location = new System.Drawing.Point(623, 493);
             this.btnJuezConfirmarVoto.Name = "btnJuezConfirmarVoto";
             this.btnJuezConfirmarVoto.Size = new System.Drawing.Size(257, 49);
-            this.btnJuezConfirmarVoto.TabIndex = 2;
+            this.btnJuezConfirmarVoto.TabIndex = 1;
             this.btnJuezConfirmarVoto.Text = "Confirmar Voto";
             this.btnJuezConfirmarVoto.UseVisualStyleBackColor = true;
             this.btnJuezConfirmarVoto.Click += new System.EventHandler(this.button1_Click);
@@ -334,7 +347,7 @@
             this.btnJuezHabilitarVoto.Location = new System.Drawing.Point(347, 493);
             this.btnJuezHabilitarVoto.Name = "btnJuezHabilitarVoto";
             this.btnJuezHabilitarVoto.Size = new System.Drawing.Size(257, 49);
-            this.btnJuezHabilitarVoto.TabIndex = 4;
+            this.btnJuezHabilitarVoto.TabIndex = 0;
             this.btnJuezHabilitarVoto.Text = "Habilitar Voto";
             this.btnJuezHabilitarVoto.UseVisualStyleBackColor = true;
             this.btnJuezHabilitarVoto.Click += new System.EventHandler(this.btnJuezHabilitarVoto_Click);
@@ -405,5 +418,6 @@
         private System.Windows.Forms.Label lblJuezMensajeSist;
         private System.Windows.Forms.Button btnJuezHabilitarVoto;
         private System.Windows.Forms.GroupBox grbJuezMensajeSist;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }

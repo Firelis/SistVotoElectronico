@@ -30,5 +30,10 @@ namespace SistVotoElectronico
             frmJueM.Show();
             this.Hide();
         }
+
+        private void FrmInicio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
